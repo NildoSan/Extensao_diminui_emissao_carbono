@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3, 
+  "name": "Extensão Verde",
+  "version": "1.0",
+  "permissions": [
+      "activeTab"
+  ],
+  "content_scripts": [
+      {
+          "matches": ["https://dol.com.br/?d=1"], // Define em quais sites sua extensão funcionará
+          "js": ["content.js"] // Scripts que serão executados na página
+      }
+  ]
+}
